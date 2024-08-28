@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+    <h1>objects</h1>
+    <script>
+        let car={
+            model:"toyota v8",
+            year:2022,
+            usesDiesel:true,
+            engine:{
+                capacity:2.5,
+                type:"v8",
+                turbo:true,
+            },
+            start: function(key){
+                //anonymous function
+                if (key="albert"){
+                    console.log("car started");
+                }else{
+                    console.log("wrong key!");
+                    
+                }
+                
+                
+            }
+        }
+        console.log(car);
+        console.log(car.engine.capacity);
+
+        car.start("june") //a function inside an object is called a method
+        car.start("albert") //a funtion inside an object is called a method
+        console.log("hello world");//consoleis bult-in js object
+        console.error("some error message");
+
+        //js comes with many built in objects eg console, math, date, array, object, number, boolean, etc
+
+        const res= Math.sqrt(49)
+        console.log(res);
+
+        let total=90
+
+        let mycar= Object.create(car)//let my car inherit all ptoperties and methods from car
+        mycar.model="Mitsubishi"
+        mycar.start()
+        console.log(mycar);
+
+        const names =["vic, esther,nelly"]
+        console.log(names);
+        console.log(names.reverse());
+              //array, string,number, boolean, object---automatically inherit properties and methods of global respect
+        //string and array methods, number, dates, objects
+        //explore 5 string methods
+/* 1. length:
+Returns the length of the string (the number of characters).
+let str = "Hello, world!"; //Output: 13
+console.log(str.length);
+2. toUpperCase():
+Converts all characters in the string to uppercase.
+let greeting = "hello there";
+console.log(greeting.toUpperCase()); // Output: HELLO THERE
+3. toLowerCase():
+Converts all characters in the string to lowercase.
+let message = "This is a MIXED CASE string";
+console.log(message.toLowerCase()); // Output: this is a mixed case string
+4. indexOf():
+Searches for a specified substring within the string and returns its starting index (or -1 if not found).
+let sentence = "The quick brown fox jumps over the lazy dog";
+console.log(sentence.indexOf("fox")); // Output: 16
+console.log(sentence.indexOf("cat")); // Output: -1
+5. slice():
+Extracts a portion of the string, starting at a specified index and ending at a specified index (exclusive).
+let text = "JavaScript is fun!";
+console.log(text.slice(10, 15)); // Output: "is fun" */
+
+        //explore 5 array methods
+/* javaScript arrays are powerful data structures that provide various methods for manipulating and working with their elements. Here are 5 commonly used array methods:
+
+1. push()
+Purpose: Adds one or more elements to the end of an array.
+Syntax: array.push(element1, element2, ...)
+let fruits = ["apple", "banana"];
+fruits.push("orange", "grape");
+console.log(fruits); // Output: ["apple", "banana", "orange", "grape"]
+2. pop()
+Purpose: Removes the last element from an array and returns it.
+Syntax: array.pop()
+let colors = ["red", "green", "blue"];
+let lastColor = colors.pop();
+console.log(lastColor); // Output: "blue"
+console.log(colors); // Output: ["red", "green"]
+3. shift()
+Purpose: Removes the first element from an array and returns it.
+Syntax: array.shift()
+let numbers = [1, 2, 3, 4];
+let firstNumber = numbers.shift();
+console.log(firstNumber); // Output: 1
+console.log(numbers); // Output: [2, 3, 4]
+4. unshift()
+Purpose: Adds one or more elements to the beginning of an array.
+Syntax: array.unshift(element1, element2, ...)
+let animals = ["cat", "dog"];
+animals.unshift("bird", "fish");
+console.log(animals); // Output: ["bird", "fish", "cat", "dog"]
+5. join()
+Purpose: Joins all elements of an array into a string, separated by a specified separator.
+Syntax: array.join(separator)
+let names = ["Alice", "Bob", "Charlie"];
+let joinedNames = names.join(", ");
+console.log(joinedNames); // Output: "Alice, Bob, Charlie" */
+
+
+        //javascript objects
+ /* Objects in JavaScript are fundamental data structures that represent real-world entities or concepts. They are collections of key-value pairs, where keys are used to access corresponding values.
+
+Key Properties of Objects:
+
+Key-value pairs: Objects store data in the form of key-value pairs. The keys are used to access the corresponding values.
+Dynamic nature: Objects are dynamic, meaning you can add, remove, or modify properties at any time.
+Customizable: You can create objects with any combination of properties and values to suit your specific needs.
+Creating Objects:
+
+There are two common ways to create objects in JavaScript:
+
+1, Object literal notation:
+let person = {
+  firstName: "Alice",
+  lastName: "Smith",
+  age: 30,
+  city: "New York"
+};
+2. Using the new Object() constructor:
+let car = new Object();
+car.make = "Toyota";
+car.model = "Camry";
+car.year = 2023;
+Accessing Properties:
+You can access properties of an object using dot notation or bracket notation:
+console.log(person.firstName); // Output: Alice
+console.log(car["model"]); // Output: Camry
+Modifying Properties:
+You can modify the values of properties by assigning new values:
+person.age = 31;
+car.year = 2024;
+Adding and Removing Properties:
+You can add new properties to an object by assigning values to them:
+person.occupation = "Engineer";
+You can remove properties using the delete operator:
+delete car.year;
+Methods:
+Objects can also contain methods, which are functions defined within the object. Methods allow you to encapsulate behavior and logic related to the object.
+let animal = {
+  name: "Leo",
+  species: "Cat",
+  makeSound: function() {
+    console.log("Meow!");
+  }
+};
+
+animal.makeSound(); // Output: Meow!
+Nested Objects:
+Objects can contain other objects as properties, creating nested structures:
+let address = {
+  street: "123 Main St",
+  city: "Anytown",
+  state: "CA"
+};
+
+person.address = address;
+Object-Oriented Programming (OOP):
+
+JavaScript is an object-oriented language, and objects play a central role in OOP concepts like classes, inheritance, and polymorphism.
+
+By understanding objects, you can create well-structured, reusable, and modular JavaScript code. */
+
+        
+
+
+        
+        
+        
+        
+    </script>
+</body>
+</html>
