@@ -123,6 +123,10 @@ console.log(checkIfPalindrome("454"));
 let someNumber=56
 console.log();
 
+// Write a function that counts the number of vowels in a given string.
+// Write a function that finds the greatest common divisor of two numbers.
+// Write a function that calculates the factorial of a given number.
+
 
 
 
