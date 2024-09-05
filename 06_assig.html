@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p style="color: rgb(227, 223, 223);">hi there i'm a beuty to be stunned</p>
+    <button style="background-color: blue;padding: 40px;">its love</button>
+    <script>
+        let btn=document.querySelector("button")
+        let p= document.querySelector("p")
+
+        console.log(!(p.style.color=="green"));
+
+        btn.addEventListener("click",()=>{
+            if (!(p.style.color=="green")){
+                p.style.color="green";
+            }else{
+                p.style.color="red";
+            }
+        })
+        
+    </script>
+    
+</body>
+</html>
+
+<!-- create 2 tags in html a button and a paragraph that when the window is loaded the color of the text is default black, when the button is clicked it checks wheather the color of the paragraph is green else if its another it changes to green else returns to default(red) -->
